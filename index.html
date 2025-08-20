@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quarterly Earnings Report</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Quarterly Earnings Report</h2>
+          <p>Modern Presentation for Stakeholders</p>
+          <small>By a Technical Consultant</small>
+          <br />
+          <small>Contact: 23f3001880@ds.study.iitm.ac.in</small>
+          <aside class="notes">
+            Welcome everyone to the quarterly earnings report. Today, we'll walk
+            through our financial performance and key strategic initiatives.
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Key Highlights for Q2
+            
+            * **Strong Revenue Growth:** Revenue increased by 15% year-over-year, driven by our digital transformation initiatives.
+            * **Operational Efficiency:** We successfully reduced operational costs by 8%, improving our profit margins.
+            * **Market Expansion:** Our new product lines have captured significant market share in emerging markets.
+            
+            ---
+            
+            ### Key Strategic Focus
+            
+            -   Further investment in AI-driven technologies.
+            -   Expanding our presence in key international markets.
+            -   Enhancing customer experience through data analytics.
+          </textarea>
+        </section>
+
+        <section>
+          <h2>Financial Performance Breakdown</h2>
+          <ul>
+            <li class="fragment fade-in-then-semi-out">
+              Revenue: $500 Million
+            </li>
+            <li class="fragment fade-in-then-semi-out">Costs: $350 Million</li>
+            <li class="fragment fade-in-then-semi-out">
+              Net Income: $150 Million
+            </li>
+          </ul>
+          <aside class="notes">
+            This slide uses animated elements to guide the audience's focus.
+            We'll start with revenue and costs, and then reveal the key
+            takeaway, our net income.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Code for Financial Forecasting</h2>
+          <pre>
+            <code class="language-python" data-trim data-noescape>
+              # A simple Python function to calculate future value
+              def calculate_future_value(principal, rate, years):
+                  future_value = principal * (1 + rate) ** years
+                  return future_value
+
+              # Example usage
+              initial_investment = 10000
+              annual_rate = 0.05
+              time_in_years = 10
+              
+              final_value = calculate_future_value(initial_investment, annual_rate, time_in_years)
+              print(f"The future value is: ${final_value:.2f}")
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Valuation Models</h2>
+          <p>
+            The **Discounted Cash Flow (DCF)** formula is a key valuation
+            method:
+          </p>
+          $$ DCF = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t} $$
+          <p>Where:</p>
+          <ul>
+            <li>$CF_t$ = Cash flow in year t</li>
+            <li>$r$ = Discount rate</li>
+            <li>$t$ = Time period</li>
+          </ul>
+          <aside class="notes">
+            Here we show the DCF formula. This demonstrates how we calculate the
+            present value of future earnings to assess a company's worth.
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+
+    <script>
+      // Initialize Reveal.js with plugins
+      Reveal.initialize({
+        hash: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealMath.KaTeX,
+        ],
+      });
+    </script>
+  </body>
+</html>
